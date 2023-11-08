@@ -4,6 +4,6 @@
     <title>Login Page</title>
 </head>
 <body>
-Welcome
+Welcome ${name}
 </body>
 </html>
