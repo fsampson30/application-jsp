@@ -20,4 +20,9 @@ public class LoginController {
         logger.debug("Request param is {}" ,name);
         return "login";
     }
+
+    @RequestMapping("/loginform")
+    public String goTologinFormPage() {
+        return "loginform";
+    }
 }
