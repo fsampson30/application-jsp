@@ -28,7 +28,8 @@ public class LoginController {
     }
 
     @RequestMapping(value = "/loginform", method = RequestMethod.POST)
-    public String goToWelcomePage() {
+    public String goToWelcomePage(@RequestParam String name, @RequestParam String password, ModelMap map) {
+        map.put("name",name);
         return "welcome";
     }
 }
