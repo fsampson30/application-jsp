@@ -4,7 +4,8 @@
     </head>
     <body>
         <div>Welcome this page</div>
-        <div>Your name: ${name}</div>
+        <hr />
+        <div><h1>Your name: ${name}</h1></div>
         <div><a href="list-todos">Manage:</a> your todos ${name}</div>
     </body>
 </html>
