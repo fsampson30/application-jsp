@@ -5,9 +5,9 @@
         <title>List Todos Page</title>
     </head>
     <body>
-        <div>Welcome this page ${name}</div>
+        <div class="container">
         <div>Your Todos are: </div>
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>id</th>
