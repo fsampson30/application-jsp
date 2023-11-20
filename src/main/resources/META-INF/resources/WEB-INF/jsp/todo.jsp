@@ -10,7 +10,7 @@
             <h1>Enter Todo Details</h1>
             <form:form method="post" modelAttribute="todo">
                 Description: <form:input type="text" path="description" required="required" />
-                             <form:errors path="description" />
+                             <form:errors path="description" cssClass="text-warning"/>
                 <input type="submit" class="btn btn-success"/>
             </form:form>
         </div>
