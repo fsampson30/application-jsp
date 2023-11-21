@@ -35,8 +35,9 @@ public class TodoService {
         todos.removeIf(predicate);
     }
 
-    public void updateById(int id){
-
+    public void updateTodo(Todo todo){
+        deleteById(todo.getId());
+        todos.add(todo);
     }
 
     public Todo findById(int id) {
