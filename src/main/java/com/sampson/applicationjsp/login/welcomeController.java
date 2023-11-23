@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
 @SessionAttributes("name")
-public class LoginController {
+public class welcomeController {
 
     @Autowired
     private LoginAuthenticationService loginAuthenticationService;
@@ -27,9 +27,10 @@ public class LoginController {
         return "login";
     }
 
-    @RequestMapping(value = "/loginform", method = RequestMethod.GET)
-    public String goTologinFormPage() {
-        return "loginform";
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String goToWelcomePage(ModelMap modelMap) {
+        modelMap.put("name","flavio");
+        return "welcome";
     }
 
     @RequestMapping(value = "/loginform", method = RequestMethod.POST)
