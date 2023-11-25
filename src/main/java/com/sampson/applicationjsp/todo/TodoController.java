@@ -1,7 +1,6 @@
 package com.sampson.applicationjsp.todo;
 
 import jakarta.validation.Valid;
-import org.springframework.boot.Banner;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
